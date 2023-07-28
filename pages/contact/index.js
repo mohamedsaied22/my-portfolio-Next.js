@@ -65,7 +65,7 @@ const Contact = () => {
       <div>
         <ParticlesContainer />
       </div>
-      <div className="container mx-auto py-20 xl:py-32 text-center xl:text-left flex flex-wrap items-center justify-center h-full ">
+      <div className="container mx-auto py-16 xl:py-32 text-center xl:text-left flex flex-wrap items-center justify-center h-full ">
         {/* contact info */}
         <motion.div
           variants={fadeIn("right", 0.4)}
@@ -74,7 +74,7 @@ const Contact = () => {
           exit="hidden"
           className="contact-info flex flex-col text-center xl:text-left w-full xl:w-1/3 mb-0 z-20 text-shad-sm"
         >
-          <h3 className="text-lg lg:text-2xl mb-2 lg:mb-4 text-cyan-600 text-shad">
+          <h3 className="text-lg lg:text-2xl mb-2 lg:mb-4 text-sky-600 text-shad">
             GET IN TOUCH
           </h3>
           <p className="xl:mb-2 text-sm xl:text-md">

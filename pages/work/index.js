@@ -24,7 +24,7 @@ const Projects = () => {
               exit="hidden"
               className="h2 xl:mt-8 md:mt-10 sm:mt-8 text-shad"
             >
-              My Pro<span className="text-cyan-700 text-shad">j</span>ects.
+              My Pro<span className="text-sky-700 text-shad">j</span>ects.
             </motion.h2>
             <motion.p
               variants={fadeIn("right", 0.3)}

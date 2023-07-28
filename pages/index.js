@@ -72,7 +72,7 @@ const Home = () => {
             Hello, I am
           </motion.p>
           <motion.h2
-            className="h2 z-20 text-cyan-600 font-signture text-shad  "
+            className="h2 z-20 text-sky-600 font-signture text-shad-sm  "
             variants={fadeIn("right", 1)}
             initial="hidden"
             animate="show"
@@ -93,7 +93,7 @@ const Home = () => {
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                className="text-cyan-500 font-texttyping "
+                className="text-sky-600 font-texttyping "
               >
                 <Typewriter
                   options={{
@@ -126,7 +126,7 @@ const Home = () => {
               <span className="button-text text-shad-sm">Read More</span>
             </button>
           </motion.a>
-          <div className="flex xl:justify-start flex-col xl:flex-row gap-y-6 ">
+          <div className="flex xl:justify-start justify-end xl:flex-row gap-y-6 ">
             <motion.a
               href="/"
               className="z-20"

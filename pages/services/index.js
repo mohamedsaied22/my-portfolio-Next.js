@@ -27,7 +27,7 @@ const Services = () => {
               exit="hidden"
               className="h2 xl:mt-8 md:mt-10 sm:mt-8 text-shad-sm"
             >
-              My S<span className="text-cyan-600">e</span>rvic<span className="text-cyan-600">e</span>s 
+              My S<span className="text-sky-600">e</span>rvic<span className="text-sky-600">e</span>s 
             </motion.h2>
             <motion.p
               variants={fadeIn("right", 1)}

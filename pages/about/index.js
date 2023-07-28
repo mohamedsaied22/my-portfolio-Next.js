@@ -125,7 +125,7 @@ const About = () => {
             animate="show"
             exit="hidden"
           >
-            Welcome <span className="text-cyan-600">again!</span>
+            Welcome <span className="text-sky-600">again!</span>
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.8)}
@@ -152,7 +152,7 @@ const About = () => {
               {/* clents */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-shad-sm text-center mb-2 flex items-center flex-col ">
-                  <div className="text-cyan-600 text-center flex items-center flex-col text-shad-sm">
+                  <div className="text-sky-600 text-center flex items-center flex-col text-shad-sm">
                     <BiHappyHeartEyes className="mr-1 flex-1 shadow" />
                     <CountUp start={0} end={255} duration={10} />
                   </div>
@@ -165,7 +165,7 @@ const About = () => {
               {/* finish Projects */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-center mb-2 flex items-center flex-col ">
-                  <div className="text-cyan-600 text-center flex items-center flex-col text-shad-sm">
+                  <div className="text-sky-600 text-center flex items-center flex-col text-shad-sm">
                     <AiOutlineFundProjectionScreen className="mr-1 flex-1 shadow" />
                     <CountUp start={0} end={15} duration={10} />
                   </div>
@@ -179,7 +179,7 @@ const About = () => {
 
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-center mb-2 flex items-center flex-col ">
-                  <div className="text-cyan-600 text-center flex items-center flex-col text-shad-sm">
+                  <div className="text-sky-600 text-center flex items-center flex-col text-shad-sm">
                     <BiSupport className="mr-1 flex-1" />
                     <CountUp start={0} end={877} duration={10} />
                   </div>
@@ -207,7 +207,7 @@ const About = () => {
                   key={itemIndex}
                   className={`${
                     index === itemIndex &&
-                    "text-cyan-600 after:w-[100%] after:bg-cyan-600 after:transition-all after:duration-700 after:left-0  "
+                    "text-sky-600 after:w-[100%] after:bg-sky-600 after:transition-all after:duration-700 after:left-0  "
                   } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:absolute overflow-hidden after:left-[-20px] after:bottom-0 `}
                   onClick={() => setIndex(itemIndex)}
                 >
@@ -224,10 +224,10 @@ const About = () => {
                   className="flex flex-1 flex-col md:flex-row max-w-max gap-x-2 items-center"
                 >
                   {/* title */}
-                  <div className="font-bold mb-2 md:mb-0 text-cyan-600 ">
+                  <div className="font-bold mb-2 md:mb-0 text-sky-600 ">
                     {item.desc}
                   </div>
-                  <div className="font-bold mb-2 md:mb-0 text-cyan-600 ">
+                  <div className="font-bold mb-2 md:mb-0 text-sky-600 ">
                     {item.title}
                   </div>
                   <div className="hidden md:flex ">-</div>
