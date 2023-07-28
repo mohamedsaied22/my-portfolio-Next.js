@@ -1,5 +1,206 @@
+// next image
+import Image from "next/image";
+import Typewriter from "typewriter-effect";
+
+// componants
+import ParticlesContainer from "../components/ParticlesContainer";
+import ProjectsBtn from "../components/ProjectsBtn";
+import Avatar from "../components/Avatar";
+
+//framer  motion
+import { easeInOut, motion } from "framer-motion";
+
+//variatns
+import { fadeIn } from "../variants";
+
+import DarkModeButton from "/components/darkmode";
+
+import StarsCanvas from "/components/StarsCanvas";
+
+import Toggle from "../components/toggle";
+
+// loading
+import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
+import NProgress from 'nprogress';
+import 'nprogress/nprogress.css';
+import Loading from '../components/loading';
+
+//text typing
+
+
 const Home = () => {
-  return <div>Home</div>;
+  const [showDiv, setShowDiv] = useState(false);
+  const [showBg, setShowBg] = useState(true);
+  const [loading, setLoading] = useState(false);
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleStart = () => {
+      setLoading(true);
+      NProgress.start();
+    };
+    const handleComplete = () => {
+      setLoading(false);
+      NProgress.done();
+    };
+  
+    router.events.on('routeChangeStart', handleStart);
+    router.events.on('routeChangeComplete', handleComplete);
+    router.events.on('routeChangeError', handleComplete);
+  
+    return () => {
+      router.events.off('routeChangeStart', handleStart);
+      router.events.off('routeChangeComplete', handleComplete);
+      router.events.off('routeChangeError', handleComplete);
+    };
+  }, [router]);
+
+  const handleToggle = () => {
+    setShowDiv(!showDiv);
+    setShowBg(!showBg);
+  };
+  return (
+    <div className=" h-full" >
+      {/* text */}
+      <StarsCanvas />
+      <div className="w-full h-full "key="home-page">
+        <div className="flex text-center flex-col justify-center xl:pt-20 xl:text-left h-full container mx-auto  ">
+          {/* title */}
+          <motion.p
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="text-xl lg:text-3xl  z-20 font-bold  "
+          >
+            Hello, I am
+          </motion.p>
+          <motion.h2
+            className="h2 z-20 text-blue-500 font-signture text-shad "
+            variants={fadeIn("right", 1)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+          >
+            Mohamed Saied,
+          </motion.h2>
+          <motion.div
+            variants={fadeIn("right", 1.2)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+          >
+            <h3 className="text-xl lg:text-3xl font-bold mb-4  z-30 ">
+              I am a
+              <motion.div
+                variants={fadeIn("right", 1.4)}
+                initial="hidden"
+                animate="show"
+                exit="hidden"
+                className="text-blue-500 font-texttyping "
+              >
+                <Typewriter
+                  options={{
+                    strings: [
+                      "",
+                      "",
+                      "Web Developer",
+                      "Software Implementor",
+                      "Freelancer",
+                    ],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </motion.div>
+            </h3>
+          </motion.div>
+          {/* links */}
+          <motion.a
+            variants={fadeIn("right", 2)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            href="/about"
+          >
+            <button className="learn-more z-30 mb-4 ">
+              <span className="circle" aria-hidden="true">
+                <span className="icon arrow"></span>
+              </span>
+              <span className="button-text">Read More</span>
+            </button>
+          </motion.a>
+          <div className="flex xl:justify-start flex-col xl:flex-row gap-y-6 ">
+            <motion.a
+              href="/"
+              className="z-20"
+              variants={fadeIn("right", 2.4)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+            >
+              <button className="personal-btn h-[35px] w-[120px] lg:h[45px] lg:w-[130px]">My Cv</button>
+            </motion.a>
+            <motion.a
+              href="/contact"
+              className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-4 xl:mb-10 z-20 "
+              variants={fadeIn("right", 2.6)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+            >
+              <button className="personal-btn h-[35px] w-[120px] lg:h[45px] lg:w-[130px] ">Hire me</button>
+            </motion.a>
+          </div>
+          {/*projects btns */}
+          <motion.div
+            className="flex justify-center xl:hidden relative z-20"
+            variants={fadeIn("right", 3)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+          >
+            <ProjectsBtn />
+          </motion.div>
+          <motion.div
+            variants={fadeIn("right", 3)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="hidden xl:flex z-20"
+          >
+            <ProjectsBtn />
+          </motion.div>
+        </div>
+      </div>
+
+      {/* image */}
+      <div className="w-full h-full absolute right-0 bottom-0 ">
+        {/* background image */}
+        <div
+  className={`bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-[133%] h-full absolute translate-z-0 ${
+    showDiv ? "hidden" : ""
+  } ${showBg ? "opacity-30" : "opacity-0"}`}
+></div>
+        {/* avatar */}
+        <motion.div
+          className=" max-w-[900px] max-h-[700px] absolute -bottom-32 lg:bottom-[100px] lg:right-[0px] drop-shadow-2xl "
+          variants={fadeIn("down", 3.5)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          transition={{ duration: 1 }}
+        >
+          <Avatar />
+        </motion.div>
+      </div>
+      <DarkModeButton />
+      {loading && <Loading />}
+
+
+    </div>
+  );
 };
 
 export default Home;
