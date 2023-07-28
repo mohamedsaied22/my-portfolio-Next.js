@@ -65,76 +65,78 @@ const Contact = () => {
       <div>
         <ParticlesContainer />
       </div>
-      <div className="container mx-auto py-20 xl:py-32 text-center xl:text-left flex flex-wrap items-center justify-center h-full shadow">
+      <div className="container mx-auto py-20 xl:py-32 text-center xl:text-left flex flex-wrap items-center justify-center h-full ">
         {/* contact info */}
         <motion.div
           variants={fadeIn("right", 0.4)}
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="contact-info flex flex-col text-center xl:text-left w-full xl:w-1/3 mb-4 xl:mb-0 z-20"
+          className="contact-info flex flex-col text-center xl:text-left w-full xl:w-1/3 mb-0 z-20 text-shad-sm"
         >
-          <h3 className="text-xl lg:text-2xl mb-2 lg:mb-4 text-cyan-700">GET IN TOUCH</h3>
-          <p className="xl:mb-2">
-            <FaEnvelope className="inline-block mr-2" />
+          <h3 className="text-lg lg:text-2xl mb-2 lg:mb-4 text-cyan-600 text-shad">
+            GET IN TOUCH
+          </h3>
+          <p className="xl:mb-2 text-sm xl:text-md">
+            <FaEnvelope className=" inline-block mr-2" />
             Email:&nbsp;&nbsp; mohamedsaid2994@gmail.com
           </p>
-          <p className="xl:mb-2">
+          <p className="xl:mb-2 text-sm xl:text-md">
             <FaMapMarkerAlt className="inline-block mr-2" />
             Location: &nbsp;&nbsp;Cairo, EGYPT
           </p>
-          <p className="xl:mb-2">
+          <p className="xl:mb-2 text-sm xl:text-md">
             <FaPhone className="inline-block mr-2" />
-            Phone: &nbsp;&nbsp;+2 &nbsp;&nbsp;111&nbsp;&nbsp;39&nbsp;&nbsp;599&nbsp;&nbsp;79
+            Phone: &nbsp;&nbsp;+2
+            &nbsp;&nbsp;111&nbsp;&nbsp;39&nbsp;&nbsp;599&nbsp;&nbsp;79
           </p>
 
-          
-            <ul className="flex gap-x-4 text-md xl:text-2xl relative mt-4 justify-center xl:justify-start">
-              <li>
-                <a href="https://github.com/mohamedsaied22" target="-blank">
-                  <BsGithub />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/mohamed-saied-507b29216/"
-                  target="-blank"
-                >
-                  <BsLinkedin />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebook.com/mohamed.l.karar/"
-                  target="-blank"
-                >
-                  <BsFacebook />
-                </a>
-              </li>
-              <li>
-                <a href="https://wa.me/201113959979" target="-blank">
-                  <BsWhatsapp />
-                </a>
-              </li>
-            </ul>
-        
+          <ul className="flex gap-x-4 text-md xl:text-2xl relative mt-4 justify-center xl:justify-start">
+            <li>
+              <a href="https://github.com/mohamedsaied22" target="-blank">
+                <BsGithub />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/mohamed-saied-507b29216/"
+                target="-blank"
+              >
+                <BsLinkedin />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/mohamed.l.karar/"
+                target="-blank"
+              >
+                <BsFacebook />
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/201113959979" target="-blank">
+                <BsWhatsapp />
+              </a>
+            </li>
+          </ul>
         </motion.div>
         {/* text form */}
         <div className="container flex flex-col w-full xl:w-2/3 max-w-[700px] z-20">
           {/* text */}
-          <motion.h2 
-            variants={fadeIn("left", .6)}
+          <motion.h2
+            variants={fadeIn("left", 0.6)}
             initial="hidden"
             animate="show"
             exit="hidden"
-          className="h2 text-2xl xl:text-[36px] mb-4 xl:mb-12 text-center">
-            Lets <span className="text-cyan-600">Connect.</span>
+            className="h2 text-2xl xl:text-[36px] mb-4 xl:mb-12 text-center text-shad-sm"
+          >
+            Lets <span className="text-cyan-600 text-shad-sm">Connect.</span>
           </motion.h2>
           {/* form */}
           <motion.form
             ref={form}
             onSubmit={sendEmail}
-            variants={fadeIn("left", .6)}
+            variants={fadeIn("left", 0.6)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -146,7 +148,7 @@ const Contact = () => {
               <div className="container-input flex w-full gap-x-6">
                 <input
                   type="text"
-                  className="input"
+                  className="input h-[30px] xl:h-[45px]"
                   name="user_name"
                   required
                 />
@@ -156,7 +158,7 @@ const Contact = () => {
               <div className="container-input flex w-full gap-x-6">
                 <input
                   type="text"
-                  className="input"
+                  className="input h-[30px] xl:h-[45px]"
                   name="user_email"
                   required
                 />
@@ -165,7 +167,12 @@ const Contact = () => {
             </div>
 
             <div className="container-input flex w-full gap-x-6">
-              <input type="text" className="input " name="subject" required />
+              <input
+                type="text"
+                className="input h-[30px] xl:h-[45px]"
+                name="subject"
+                required
+              />
               <label class="label">Subject</label>
             </div>
 

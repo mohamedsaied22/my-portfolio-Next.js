@@ -3,9 +3,11 @@ import Image from "next/image";
 import Typewriter from "typewriter-effect";
 
 // componants
-import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
+import DarkModeButton from "/components/darkmode";
+
+import StarsCanvas from "/components/StarsCanvas";
 
 //framer  motion
 import { easeInOut, motion } from "framer-motion";
@@ -13,21 +15,14 @@ import { easeInOut, motion } from "framer-motion";
 //variatns
 import { fadeIn } from "../variants";
 
-import DarkModeButton from "/components/darkmode";
-
-import StarsCanvas from "/components/StarsCanvas";
-
-import Toggle from "../components/toggle";
-
 // loading
-import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
-import NProgress from 'nprogress';
-import 'nprogress/nprogress.css';
-import Loading from '../components/loading';
+import React, { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+import NProgress from "nprogress";
+import "nprogress/nprogress.css";
+import Loading from "../components/loading";
 
 //text typing
-
 
 const Home = () => {
   const [showDiv, setShowDiv] = useState(false);
@@ -44,15 +39,15 @@ const Home = () => {
       setLoading(false);
       NProgress.done();
     };
-  
-    router.events.on('routeChangeStart', handleStart);
-    router.events.on('routeChangeComplete', handleComplete);
-    router.events.on('routeChangeError', handleComplete);
-  
+
+    router.events.on("routeChangeStart", handleStart);
+    router.events.on("routeChangeComplete", handleComplete);
+    router.events.on("routeChangeError", handleComplete);
+
     return () => {
-      router.events.off('routeChangeStart', handleStart);
-      router.events.off('routeChangeComplete', handleComplete);
-      router.events.off('routeChangeError', handleComplete);
+      router.events.off("routeChangeStart", handleStart);
+      router.events.off("routeChangeComplete", handleComplete);
+      router.events.off("routeChangeError", handleComplete);
     };
   }, [router]);
 
@@ -61,23 +56,23 @@ const Home = () => {
     setShowBg(!showBg);
   };
   return (
-    <div className=" h-full" >
+    <div className=" h-full ">
       {/* text */}
       <StarsCanvas />
-      <div className="w-full h-full "key="home-page">
-        <div className="flex text-center flex-col justify-center xl:pt-20 xl:text-left h-full container mx-auto  ">
+      <div className="w-full h-full " key="home-page">
+        <div className="flex text-center flex-col justify-center pt-0 xl:pt-20 xl:text-left h-full container mx-auto  ">
           {/* title */}
           <motion.p
-            variants={fadeIn("right", 0.4)}
+            variants={fadeIn("right", 0.5)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-xl lg:text-3xl  z-20 font-bold  "
+            className="text-lg lg:text-3xl z-20 font-bold text-shad-sm "
           >
             Hello, I am
           </motion.p>
           <motion.h2
-            className="h2 z-20 text-blue-500 font-signture text-shad "
+            className="h2 z-20 text-cyan-600 font-signture text-shad  "
             variants={fadeIn("right", 1)}
             initial="hidden"
             animate="show"
@@ -86,19 +81,19 @@ const Home = () => {
             Mohamed Saied,
           </motion.h2>
           <motion.div
-            variants={fadeIn("right", 1.2)}
+            variants={fadeIn("right", 1.5)}
             initial="hidden"
             animate="show"
             exit="hidden"
           >
-            <h3 className="text-xl lg:text-3xl font-bold mb-4  z-30 ">
+            <h3 className="text-xl lg:text-3xl font-bold mb-4 z-30 text-shad-sm">
               I am a
               <motion.div
-                variants={fadeIn("right", 1.4)}
+                variants={fadeIn("right", 2)}
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                className="text-blue-500 font-texttyping "
+                className="text-cyan-500 font-texttyping "
               >
                 <Typewriter
                   options={{
@@ -128,35 +123,39 @@ const Home = () => {
               <span className="circle" aria-hidden="true">
                 <span className="icon arrow"></span>
               </span>
-              <span className="button-text">Read More</span>
+              <span className="button-text text-shad-sm">Read More</span>
             </button>
           </motion.a>
           <div className="flex xl:justify-start flex-col xl:flex-row gap-y-6 ">
             <motion.a
               href="/"
               className="z-20"
-              variants={fadeIn("right", 2.4)}
+              variants={fadeIn("right", 2.5)}
               initial="hidden"
               animate="show"
               exit="hidden"
             >
-              <button className="personal-btn h-[35px] w-[120px] lg:h[45px] lg:w-[130px]">My Cv</button>
+              <button className="personal-btn h-[35px] w-[120px] lg:h[45px] lg:w-[130px]">
+                My Cv
+              </button>
             </motion.a>
             <motion.a
               href="/contact"
               className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-4 xl:mb-10 z-20 "
-              variants={fadeIn("right", 2.6)}
+              variants={fadeIn("right", 3)}
               initial="hidden"
               animate="show"
               exit="hidden"
             >
-              <button className="personal-btn h-[35px] w-[120px] lg:h[45px] lg:w-[130px] ">Hire me</button>
+              <button className="personal-btn h-[35px] w-[120px] lg:h[45px] lg:w-[130px] ">
+                Hire me
+              </button>
             </motion.a>
           </div>
           {/*projects btns */}
           <motion.div
             className="flex justify-center xl:hidden relative z-20"
-            variants={fadeIn("right", 3)}
+            variants={fadeIn("right", 3.5)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -164,7 +163,7 @@ const Home = () => {
             <ProjectsBtn />
           </motion.div>
           <motion.div
-            variants={fadeIn("right", 3)}
+            variants={fadeIn("right", 3.5)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -179,14 +178,12 @@ const Home = () => {
       <div className="w-full h-full absolute right-0 bottom-0 ">
         {/* background image */}
         <div
-  className={`bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-[133%] h-full absolute translate-z-0 ${
-    showDiv ? "hidden" : ""
-  } ${showBg ? "opacity-30" : "opacity-0"}`}
-></div>
+          className={`bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-[133%] h-full absolute translate-z-0 opacity-30`}
+        ></div>
         {/* avatar */}
         <motion.div
           className=" max-w-[900px] max-h-[700px] absolute -bottom-32 lg:bottom-[100px] lg:right-[0px] drop-shadow-2xl "
-          variants={fadeIn("down", 3.5)}
+          variants={fadeIn("down", 4)}
           initial="hidden"
           animate="show"
           exit="hidden"
@@ -197,8 +194,6 @@ const Home = () => {
       </div>
       <DarkModeButton />
       {loading && <Loading />}
-
-
     </div>
   );
 };

@@ -73,7 +73,7 @@ const ParticlesContainer = () => {
           number: {
             density: {
               enable: true,
-              area: 1500,
+              area: 800,
             },
             value: 80,
           },

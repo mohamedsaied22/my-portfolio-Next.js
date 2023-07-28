@@ -5,7 +5,7 @@ const random = require("maath/random/dist/maath-random.cjs");
 
 const Stars = (props) => {
   const ref = useRef();
-  const [sphere] = useState(() => random.inSphere(new Float32Array(150), { radius: 1.2 }));
+  const [sphere] = useState(() => random.inSphere(new Float32Array(300), { radius: 1.2 }));
 
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 10;
