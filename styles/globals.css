@@ -12,6 +12,10 @@
 h1::selection, h2::selection, h3::selection, p::selection, span::selection {
 background-color: #6c97cf;
 } 
+/* .shadow {
+  text-shadow: 0 -6px 6px #282828, 2px 4px #fff;
+
+} */
 
 /* dark mode */
 .light {
@@ -20,7 +24,6 @@ background-color: #6c97cf;
 .dark {
   background-image: linear-gradient(to bottom, #000,#000,#000, #001b33);
 }
-
 
 /* swiper */
 .translate-z-0 {
@@ -44,7 +47,7 @@ background-color: #6c97cf;
   border-radius: 25px 10px 15px 5px;
   box-shadow: 0 15px 25px -24px rgba(0, 0, 0, 0.8),
     /* inset 0 -3px 4px -1px rgba(0, 0, 0, 0.8), */
-    0 -1px 5px -1px rgb(255, 255, 255),
+    0 -1px 5px px rgb(255, 255, 255),
     inset 0 3px 4px -1px rgba(255, 255, 255, 0.2),
     /* inset 0 0 5px 2px rgba(255, 255, 255, 0.2), */
     inset 0 20px 30px 0 rgba(255, 255, 255, 0.2);
@@ -530,14 +533,13 @@ color: RGB(59,130,246);
   font-size: 15px;
   padding-left: 10px;
   position: absolute;
-  top: 13px;
+  top: 5px;
   transition: 0.3s;
   pointer-events: none;
 }
 
 .input {
   width: 200px;
-  height: 45px;
   border: none;
   outline: none;
   padding: 0px 7px;
@@ -648,11 +650,18 @@ textarea::placeholder {
 
 
 
-.text-shad {
-  text-shadow: 2px 4px #000, 2px 4px #fff;
+/* .text-shad {
+  text-shadow: 0 -6px 6px #282828;
 }
 .text-shad-sm {
   text-shadow: -2px 0px 2px #fff;
+} */
+
+.text-shad {
+  text-shadow: 0 6px 6px #282828;
+}
+.text-shad-sm {
+  text-shadow: 0 2px 4px #282828;
 }
 
 @layer base {
@@ -675,10 +684,7 @@ textarea::placeholder {
   p {
     @apply leading-[1.8] font-light font-mystyle;
   }
-  .shadow {
-  text-shadow: 0 3px 6px #282828;
 
-  }
 
   .btn,
   .input {

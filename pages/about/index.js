@@ -119,7 +119,7 @@ const About = () => {
         {/* text */}
         <div className="flex-1 flex flex-col justify-center z-10">
           <motion.h2
-            className="h2 shadow"
+            className="h2 text-shad-sm"
             variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
@@ -132,10 +132,10 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-4 xl:mb-12 px-2 xl:px-0 font-sans font-semibold shadow"
+            className="max-w-[500px] mx-auto xl:mx-0 mb-2 xl:mb-12 px-2 xl:px-0 font-sans font-semibold text-shad-sm"
           >
             
-            Detail-oriented and ambitious front-end web developer eager to
+            Iam a detail-oriented and ambitious front-end web developer eager to
             leverage my Bachelor of Information Technology degree in Computer
             Science and recent experience participating in various coding
             programs towards supporting business web development needs.
@@ -146,13 +146,13 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
+            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-4"
           >
             <div className="flex flex-1 xl:gap-x-6">
               {/* clents */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-center mb-2 flex items-center flex-col ">
-                  <div className="text-cyan-500 text-center flex items-center flex-col shadow">
+                <div className="text-2xl xl:text-4xl font-extrabold text-shad-sm text-center mb-2 flex items-center flex-col ">
+                  <div className="text-cyan-600 text-center flex items-center flex-col text-shad-sm">
                     <BiHappyHeartEyes className="mr-1 flex-1 shadow" />
                     <CountUp start={0} end={255} duration={10} />
                   </div>
@@ -165,7 +165,7 @@ const About = () => {
               {/* finish Projects */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-center mb-2 flex items-center flex-col ">
-                  <div className="text-cyan-500 text-center flex items-center flex-col shadow">
+                  <div className="text-cyan-600 text-center flex items-center flex-col text-shad-sm">
                     <AiOutlineFundProjectionScreen className="mr-1 flex-1 shadow" />
                     <CountUp start={0} end={15} duration={10} />
                   </div>
@@ -179,7 +179,7 @@ const About = () => {
 
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-center mb-2 flex items-center flex-col ">
-                  <div className="text-cyan-500 text-center flex items-center flex-col shadow">
+                  <div className="text-cyan-600 text-center flex items-center flex-col text-shad-sm">
                     <BiSupport className="mr-1 flex-1" />
                     <CountUp start={0} end={877} duration={10} />
                   </div>
@@ -200,14 +200,14 @@ const About = () => {
           exit="hidden"
           className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
         >
-          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 ">
+          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-2">
             {aboutData.map((item, itemIndex) => {
               return (
                 <div
                   key={itemIndex}
                   className={`${
                     index === itemIndex &&
-                    "text-cyan-600 after:w-[100%] after:bg-cyan-700 after:transition-all after:duration-700 after:left-0  "
+                    "text-cyan-600 after:w-[100%] after:bg-cyan-600 after:transition-all after:duration-700 after:left-0  "
                   } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:absolute overflow-hidden after:left-[-20px] after:bottom-0 `}
                   onClick={() => setIndex(itemIndex)}
                 >
@@ -216,7 +216,7 @@ const About = () => {
               );
             })}
           </div>
-          <div className=" py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center  xl:items-start ">
+          <div className=" py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start ">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div

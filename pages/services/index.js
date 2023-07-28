@@ -10,11 +10,11 @@ import { fadeIn } from "../../variants";
 
 const Services = () => {
   return (
-    <div className="h-full flex items-center py-28 xl:py-32 ">
+    <div className="h-full flex items-center py-18 xl:py-32 ">
       {/* <Circles /> */}
             {/* background image */}
             <div
-  className={`bg-service bg-cover bg-right bg-no-repeat w-full h-full absolute left-0 top-0 opacity-30`}
+  className={`bg-service bg-cover bg-right bg-no-repeat w-full h-full absolute left-0 top-0 opacity-[.25]`}
 ></div>
       <div className="container mx-auto  ">
         <div className="flex flex-col xl:flex-row gap-x-8">
@@ -25,16 +25,16 @@ const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 xl:mt-8 md:mt-10 sm:mt-8 shadow"
+              className="h2 xl:mt-8 md:mt-10 sm:mt-8 text-shad-sm"
             >
-              My Services <span className="text-sky-500">.</span>
+              My S<span className="text-cyan-600">e</span>rvic<span className="text-cyan-600">e</span>s 
             </motion.h2>
             <motion.p
               variants={fadeIn("right", 1)}
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0 font-sans font-bold shadow"
+              className="mb-4 max-w-[400px] mx-auto lg:mx-0 font-sans font-bold text-shad-sm"
             >
             Leveraging years of experience and technical expertise to provide bespoke software solutions that optimize business processes and increase efficiency.
             </motion.p>

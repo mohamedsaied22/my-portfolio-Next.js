@@ -22,19 +22,18 @@ const Projects = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 xl:mt-8 md:mt-10 sm:mt-8 shadow"
+              className="h2 xl:mt-8 md:mt-10 sm:mt-8 text-shad"
             >
-              My Projects<span className="text-cyan-700 shadow">.</span>
+              My Pro<span className="text-cyan-700 text-shad">j</span>ects.
             </motion.h2>
             <motion.p
               variants={fadeIn("right", 0.3)}
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0 shadow"
+              className="mb-4 max-w-[400px] mx-auto lg:mx-0 text-shad-sm"
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
-              dolorum necessitatibus placeat sequi cumque,
+            Explore my latest projects showcasing my web and software development skills. From sleek websites to complex applications, I create innovative solutions that meet user needs
             </motion.p>
           </div>
           <motion.div
