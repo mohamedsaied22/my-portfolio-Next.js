@@ -7,7 +7,7 @@ import { fadeIn } from "../../variants";
 
 const Projects = () => {
   return (
-    <div className="h-full flex items-center py-36">
+    <div className="h-full flex items-center py-20 xl:py-36">
       {/* <Circles /> */}
       {/* background image */}
       <div
