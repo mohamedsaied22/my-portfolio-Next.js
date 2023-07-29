@@ -56,7 +56,7 @@ const Home = () => {
     setShowBg(!showBg);
   };
   return (
-    <div className=" h-full ">
+    <div className=" h-full">
       {/* text */}
       <StarsCanvas />
       <div className="w-full h-full " key="home-page">
@@ -86,7 +86,7 @@ const Home = () => {
             animate="show"
             exit="hidden"
           >
-            <h3 className="text-xl lg:text-3xl font-bold mb-4 z-30 text-shad-sm">
+            <h3 className="text-xl lg:text-3xl font-bold mb-4 z-30 ">
               I am a
               <motion.div
                 variants={fadeIn("right", 2)}
@@ -127,18 +127,20 @@ const Home = () => {
             </button>
           </motion.a>
           <div className="flex xl:justify-start justify-end xl:flex-row gap-y-6 ">
-            <motion.a
-              href="/"
-              className="z-20"
-              variants={fadeIn("right", 2.5)}
-              initial="hidden"
-              animate="show"
-              exit="hidden"
-            >
-              <button className="personal-btn h-[35px] w-[120px] lg:h[45px] lg:w-[130px]">
-                My Cv
-              </button>
-            </motion.a>
+          <motion.a
+  href="https://drive.google.com/file/d/1fu3R3uUjtBIDOHBlayvH07L4RyeSV0VC/view?usp=sharing"
+  download="your-cv-name.pdf"
+  className="z-20 pl-10 md:pl-0"
+  target="_blank"
+  variants={fadeIn("right", 2.5)}
+  initial="hidden"
+  animate="show"
+  exit="hidden"
+>
+  <button className="personal-btn h-[35px] w-[120px] lg:h[45px] lg:w-[130px]">
+    My CV
+  </button>
+</motion.a>
             <motion.a
               href="/contact"
               className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-4 xl:mb-10 z-20 "
