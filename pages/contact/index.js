@@ -60,7 +60,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="h-full py-20 xl:py-32">
+    <div className="h-full mt-[-35px] lg:mt-0 xl:py-32">
       {/* particles */}
       <div>
         <ParticlesContainer />
@@ -132,7 +132,7 @@ const Contact = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2 text-2xl xl:text-[36px] mb-4 xl:mb-12 text-center text-shad-sm"
+            className="h2 text-2xl xl:text-[36px] mt-[-200px] lg:mt-0 mb-4 xl:mb-12 text-center text-shad-sm"
           >
             Lets <span className="text-cyan-600 text-shad-sm">Connect.</span>
           </motion.h2>
