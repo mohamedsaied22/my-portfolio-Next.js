@@ -60,7 +60,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="h-full mt-[-35px] lg:mt-0 xl:py-32">
+    <div className="h-full mt-[-35px] lg:mt-0">
       {/* particles */}
       <div>
         <ParticlesContainer />
