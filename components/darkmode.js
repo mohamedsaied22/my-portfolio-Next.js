@@ -35,7 +35,7 @@ export default function DarkModeButton() {
         <div >
           {currentTheme === "dark" ? (
             <button
-              className="bg-white/70 hover:bg-white rounded-[50%] p-[12px] shadow-2xl text-2xl"
+              className="bg-white/70 hover:bg-white rounded-[50%] p-[12px] shadow-2xl "
               onClick={toggleTheme}
             >
               <BsLightbulb className="text-black" />

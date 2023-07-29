@@ -45,13 +45,12 @@ background-color: #6c97cf;
 /* logo */
 .logo {
   border-radius: 25px 10px 15px 5px;
-  box-shadow: 0 15px 25px -24px rgba(0, 0, 0, 0.8),
-    /* inset 0 -3px 4px -1px rgba(0, 0, 0, 0.8), */
-    0 -1px 5px 0px rgb(255, 255, 255),
+  box-shadow: 0 15px 25px -4px rgba(0, 0, 0, 0.5),
+    inset 0 -3px 4px -1px rgba(0, 0, 0, 0.2),
+    0 -1px 15px -1px rgba(255, 255, 255, 0.6),
     inset 0 3px 4px -1px rgba(255, 255, 255, 0.2),
-    /* inset 0 0 5px 2px rgba(255, 255, 255, 0.2), */
+    inset 0 0 5px 1px rgba(255, 255, 255, 0.8),
     inset 0 20px 30px 0 rgba(255, 255, 255, 0.2);
-  filter: drop-shadow( 2px 2px 5px #a2a2a2 );
 
   animation: logo 5s 1 ease-in-out ;
 }

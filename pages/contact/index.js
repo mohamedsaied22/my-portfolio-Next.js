@@ -60,12 +60,16 @@ const Contact = () => {
   };
 
   return (
-    <div className="h-full">
+    <div className="h-full py-20 xl:py-32">
       {/* particles */}
       <div>
         <ParticlesContainer />
       </div>
-      <div className="container mx-auto py-16 xl:py-32 text-center xl:text-left flex flex-wrap items-center justify-center h-full ">
+          {/* background image */}
+          <div
+  className={`bg-about bg-cover bg-right bg-no-repeat w-full h-full absolute left-0 top-0 opacity-[.15] z-0`}
+  ></div>
+      <div className="container mx-auto  text-center xl:text-left flex flex-wrap items-center justify-center h-full ">
         {/* contact info */}
         <motion.div
           variants={fadeIn("right", 0.4)}

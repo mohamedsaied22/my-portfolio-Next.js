@@ -10,7 +10,7 @@ import { fadeIn } from "../../variants";
 
 const Services = () => {
   return (
-    <div className="h-full flex items-center py-18 xl:py-32 ">
+    <div className="h-full flex items-center py-20 py xl:py-32 ">
       {/* <Circles /> */}
             {/* background image */}
             <div

@@ -178,7 +178,7 @@ const Home = () => {
       <div className="w-full h-full absolute right-0 bottom-0 ">
         {/* background image */}
         <div
-          className={`bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-[133%] h-full absolute translate-z-0 opacity-30`}
+          className={`bg-about opacity-[.15] xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-[133%] h-full absolute translate-z-0 xl:opacity-30`}
         ></div>
         {/* avatar */}
         <motion.div
