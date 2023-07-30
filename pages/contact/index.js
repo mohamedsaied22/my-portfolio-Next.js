@@ -134,7 +134,7 @@ const Contact = () => {
             exit="hidden"
             className="h2 text-2xl xl:text-[36px] mt-[-200px] lg:mt-0 mb-4 xl:mb-12 text-center text-shad-sm"
           >
-          Let's <span className="text-cyan-600 text-shad-sm pt-4">Connect.</span> 
+          Lets <span className="text-cyan-600 text-shad-sm pt-4">Connect.</span> 
           </motion.h2>
           {/* form */}
           <motion.form
