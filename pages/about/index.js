@@ -60,10 +60,6 @@ export const aboutData = [
         title: "Software Application Support - Izam",
         stage: "2022 - 2023",
       },
-      {
-        title: "Intern - Alan Dick",
-        stage: "June 2021 - Sep 2021",
-      },
     ],
   },
   {
@@ -109,7 +105,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="h-full py-20 xl:py-32 text-center xl:text-left">
+    <div className="h-full py-24 xl:py-32 text-center xl:text-left">
                   {/* background image */}
                   <div
   className={`bg-about bg-cover bg-right bg-no-repeat w-full h-full absolute left-0 top-0 opacity-[.25] z-0`}

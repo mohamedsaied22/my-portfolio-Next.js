@@ -56,7 +56,7 @@ const Home = () => {
     setShowBg(!showBg);
   };
   return (
-    <div className=" h-full">
+    <div className="h-full">
       {/* text */}
       <StarsCanvas />
       <div className="w-full h-full " key="home-page">

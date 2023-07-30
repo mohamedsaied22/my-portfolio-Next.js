@@ -60,7 +60,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="h-full mt-[-35px] lg:mt-0">
+    <div className="h-full">
       {/* particles */}
       <div>
         <ParticlesContainer />
@@ -78,10 +78,10 @@ const Contact = () => {
           exit="hidden"
           className="contact-info flex flex-col text-center xl:text-left w-full xl:w-1/3 mb-0 z-20 text-shad-sm"
         >
-          <h3 className="text-lg lg:text-2xl mb-2 lg:mb-4 text-sky-600 text-shad">
+          <h3 className=" hidden lg:block xl:text-2xl xl:mb-4 text-sky-600 text-shad">
             GET IN TOUCH
           </h3>
-          <p className="xl:mb-2 text-sm xl:text-md">
+          <p className="xl:mb-2 text-sm xl:text-md mt-4">
             <FaEnvelope className=" inline-block mr-2" />
             Email:&nbsp;&nbsp; mohamedsaid2994@gmail.com
           </p>
@@ -95,16 +95,16 @@ const Contact = () => {
             &nbsp;&nbsp;111&nbsp;&nbsp;39&nbsp;&nbsp;599&nbsp;&nbsp;79
           </p>
 
-          <ul className="flex gap-x-4 text-md xl:text-2xl relative mt-4 justify-center xl:justify-start">
+          <ul className="flex gap-x-4 text-md xl:text-2xl relative mt-4 mb-8 justify-center xl:justify-start">
             <li>
-              <a href="https://github.com/mohamedsaied22" target="-blank">
+              <a href="https://github.com/mohamedsaied22" target="_blank">
                 <BsGithub />
               </a>
             </li>
             <li>
               <a
                 href="https://www.linkedin.com/in/mohamed-saied-507b29216/"
-                target="-blank"
+                target="_blank"
               >
                 <BsLinkedin />
               </a>
@@ -112,13 +112,13 @@ const Contact = () => {
             <li>
               <a
                 href="https://www.facebook.com/mohamed.l.karar/"
-                target="-blank"
+                target="_blank"
               >
                 <BsFacebook />
               </a>
             </li>
             <li>
-              <a href="https://wa.me/201113959979" target="-blank">
+              <a href="https://wa.me/201113959979" target="_blank">
                 <BsWhatsapp />
               </a>
             </li>
@@ -134,7 +134,7 @@ const Contact = () => {
             exit="hidden"
             className="h2 text-2xl xl:text-[36px] mt-[-200px] lg:mt-0 mb-4 xl:mb-12 text-center text-shad-sm"
           >
-            Lets <span className="text-cyan-600 text-shad-sm">Connect.</span>
+          Let's <span className="text-cyan-600 text-shad-sm pt-4">Connect.</span> 
           </motion.h2>
           {/* form */}
           <motion.form

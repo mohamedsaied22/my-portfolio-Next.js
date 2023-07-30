@@ -22,7 +22,7 @@ const Header = () => {
         width={160}
         height={48}
         alt=""
-        property={true}
+        priority={true}
         className=" lg:w-[220px] logo p-[10px] "
         />
         </Link>
