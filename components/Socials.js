@@ -30,22 +30,22 @@ const Socials = () => {
         </span>
         <ul>
           <li>
-            <a href="https://github.com/mohamedsaied22" target="-blank">
+            <a href="https://github.com/mohamedsaied22" target="_blank">
               <BsGithub />
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/mohamed-saied-507b29216/" target="-blank">
+            <a href="https://www.linkedin.com/in/mohamed-saied-507b29216/" target="_blank">
               <BsLinkedin />
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com/mohamed.l.karar/" target="-blank">
+            <a href="https://www.facebook.com/mohamed.l.karar/" target="_blank">
             <BsFacebook />
             </a>
           </li>
           <li>
-            <a href="https://wa.me/201113959979" target="-blank">
+            <a href="https://wa.me/201113959979" target="_blank">
             <BsWhatsapp />
             </a>
           </li>

@@ -1,17 +1,20 @@
 /* font */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,700;1,300;1,600&family=Jost:ital,wght@0,200;0,300;0,400;1,300&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&family=Rubik:ital,wght@0,300;0,400;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,500;1,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Italianno&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,700;1,300;1,600&family=Jost:ital,wght@0,200;0,300;0,400;1,300&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,900&family=Monoton&family=Norican&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&family=Orbitron&family=Pacifico&family=Rubik:ital,wght@0,300;0,400;1,400&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bungee&family=Italianno&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,700;1,300;1,600&family=Jost:ital,wght@0,200;0,300;0,400;1,300&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,900&family=Monoton&family=Norican&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&family=Orbitron&family=Pacifico&family=Rubik:ital,wght@0,300;0,400;1,400&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bungee&family=Italianno&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,700;1,300;1,600&family=Jost:ital,wght@0,200;0,300;0,400;1,300&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,900&family=Monoton&family=Norican&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&family=Orbitron&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Rubik:ital,wght@0,300;0,400;1,400&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Italianno&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,700;1,300;1,600&family=Jost:ital,wght@0,200;0,300;0,400;1,300&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,900&family=Monoton&family=Norican&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&family=Orbitron&family=Pacifico&family=Rubik:ital,wght@0,300;0,400;1,400&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bungee&family=Italianno&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,700;1,300;1,600&family=Jost:ital,wght@0,200;0,300;0,400;1,300&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,900&family=Monoton&family=Norican&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&family=Orbitron&family=Pacifico&family=Rubik:ital,wght@0,300;0,400;1,400&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bungee&family=Italianno&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,700;1,300;1,600&family=Jost:ital,wght@0,200;0,300;0,400;1,300&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,900&family=Monoton&family=Norican&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&family=Orbitron&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Rubik:ital,wght@0,300;0,400;1,400&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,500&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-h1::selection, h2::selection, h3::selection, p::selection, span::selection {
-background-color: #6c97cf;
-} 
+h1::selection,
+h2::selection,
+h3::selection,
+p::selection,
+span::selection {
+  background-color: #6c97cf;
+}
 /* .shadow {
   text-shadow: 0 -6px 6px #282828, 2px 4px #fff;
 
@@ -22,7 +25,7 @@ background-color: #6c97cf;
   background-image: linear-gradient(to right, #aeaeae, #e8e8e8, #ffff);
 }
 .dark {
-  background-image: linear-gradient(to bottom, #000,#000,#000, #001b33);
+  background-image: linear-gradient(to bottom, #000, #000, #000, #001b33);
 }
 
 /* swiper */
@@ -52,18 +55,16 @@ background-color: #6c97cf;
     inset 0 0 5px 1px rgba(255, 255, 255, 0.8),
     inset 0 20px 30px 0 rgba(255, 255, 255, 0.2);
 
-  animation: logo 5s 1 ease-in-out ;
+  animation: logo 5s 1 ease-in-out;
 }
 @keyframes logo {
   10% {
-  box-shadow: none;
-  filter: none;
+    box-shadow: none;
+    filter: none;
   }
-
 }
 
 /* buttons */
-
 
 /* start social button */
 .btn-cssbuttons {
@@ -97,8 +98,7 @@ background-color: #6c97cf;
   justify-content: center;
 }
 .btn-cssbuttons:hover,
-.btn-cssbuttons:checked
- {
+.btn-cssbuttons:checked {
   width: 150px;
   border-radius: 50px;
 }
@@ -121,8 +121,6 @@ background-color: #6c97cf;
   vertical-align: middle;
   transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-
-
 
 .btn-cssbuttons span:first-child {
   scale: 1.4;
@@ -217,14 +215,14 @@ button {
   font-size: inherit;
   font-family: inherit;
   /* transform: rotate(-10deg); */
- }
- 
- button.learn-more {
+}
+
+button.learn-more {
   width: 12rem;
   height: auto;
- }
- 
- button.learn-more .circle {
+}
+
+button.learn-more .circle {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: relative;
   display: block;
@@ -233,26 +231,26 @@ button {
   height: 3rem;
   background: #282936;
   border-radius: 1.625rem;
- }
- 
- button.learn-more .circle .icon {
+}
+
+button.learn-more .circle .icon {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
   bottom: 0;
   margin: auto;
   background: #fff;
- }
- 
- button.learn-more .circle .icon.arrow {
+}
+
+button.learn-more .circle .icon.arrow {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   left: 0.625rem;
   width: 1.125rem;
   height: 0.125rem;
   background: none;
- }
- 
- button.learn-more .circle .icon.arrow::before {
+}
+
+button.learn-more .circle .icon.arrow::before {
   position: absolute;
   content: "";
   top: -0.29rem;
@@ -262,9 +260,9 @@ button {
   border-top: 0.125rem solid #fff;
   border-right: 0.125rem solid #fff;
   transform: rotate(45deg);
- }
- 
- button.learn-more .button-text {
+}
+
+button.learn-more .button-text {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
@@ -278,21 +276,20 @@ button {
   line-height: 1.6;
   text-align: center;
   text-transform: uppercase;
- }
- 
- button:hover .circle {
+}
+
+button:hover .circle {
   width: 100%;
- }
- 
- button:hover .circle .icon.arrow {
+}
+
+button:hover .circle .icon.arrow {
   background: #fff;
   transform: translate(1rem, 0);
- }
- 
- button:hover .button-text {
-color: RGB(59,130,246);
+}
 
- }
+button:hover .button-text {
+  color: RGB(59, 130, 246);
+}
 
 /* end read more button  */
 
@@ -532,14 +529,15 @@ color: RGB(59,130,246);
   font-size: 15px;
   padding-left: 10px;
   position: absolute;
-  top: 5px;
+  top: 13px;
   transition: 0.3s;
   pointer-events: none;
 }
 
 .input {
   width: 200px;
-  border: none;
+  height: 45px;
+  /* border: none; */
   outline: none;
   padding: 0px 7px;
   border-radius: 12px;
@@ -563,7 +561,7 @@ color: RGB(59,130,246);
     -1px -1px 6px rgba(255, 255, 255, 0.4);
   border-radius: 12px;
 }
-textarea:focus::placeholder{
+textarea:focus::placeholder {
   opacity: 0.3;
 }
 textarea::placeholder {
@@ -647,8 +645,6 @@ textarea::placeholder {
 
 /*end contact page */
 
-
-
 /* .text-shad {
   text-shadow: 0 -6px 6px #282828;
 }
@@ -684,7 +680,6 @@ textarea::placeholder {
     @apply leading-[1.8] font-light font-mystyle;
   }
 
-
   .btn,
   .input {
     /* @apply h-[52px]; */
@@ -694,18 +689,13 @@ textarea::placeholder {
   }
 
   .textarea {
-    @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
+    @apply w-full h-[200px] p-6 capitalize rounded-lg resize-none;
   }
 }
 
+/* //two */
 
-
-
-
-
- /* //two */
-
- .personal-btn {
+.personal-btn {
   /* width: 140px;
   height: 45px; */
   font-size: 1.1rem;
@@ -719,39 +709,36 @@ textarea::placeholder {
   position: relative;
   transition: all 0.5s;
   z-index: 1;
- }
- 
- .personal-btn::before {
+}
+
+.personal-btn::before {
   content: "";
   position: absolute;
   top: 0;
   left: 15px;
   width: 2px;
   height: 100%;
-  background-color: RGB(59,130,246);
+  background-color: RGB(59, 130, 246);
   z-index: -1;
   transition: all 0.5s;
-  box-shadow: 0 0 10px RGB(59,130,246);
- }
- 
- .personal-btn:hover::before {
+  box-shadow: 0 0 10px RGB(59, 130, 246);
+}
+
+.personal-btn:hover::before {
   width: calc((100%) - 30px);
- }
- 
- .personal-btn:hover {
+}
+
+.personal-btn:hover {
   color: black;
   text-shadow: 0 2px 6px #000;
- }
- .personal-btn:hover::before {
+}
+.personal-btn:hover::before {
   border-radius: 10px;
+}
 
- }
- 
- .personal-btn:active:before {
+.personal-btn:active:before {
   background: #b9b9b9;
- }
-
-
+}
 
 /* loading */
 /* Normal Usage */
@@ -760,7 +747,6 @@ textarea::placeholder {
   position: absolute;
   top: 45%;
   left: 48%;
-  
 }
 
 .square {
@@ -800,7 +786,7 @@ textarea::placeholder {
   position: absolute;
   left: 40%;
   top: 50%;
-transform: rotate(-180deg);
+  transform: rotate(-180deg);
   transform: rotate(-180deg);
 }
 
@@ -831,4 +817,3 @@ transform: rotate(-180deg);
     transform: translateX(0) translateY(0) rotate(0);
   }
 }
-

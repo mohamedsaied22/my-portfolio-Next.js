@@ -32,12 +32,12 @@ export const serviceData = [
   {
     icon: <RxPencil2 />,
     title: "(UI) design",
-    description: "Designing attractive and functional user interfaces for web and mobile applications using CSS3 and HTML5, creating wireframes, prototypes, and mockups with tools like Figma or Adobe XD.",
+    description: "Designing attractive and functional user interfaces for web and mobile applications using CSS3 and HTML5, creating wireframes, prototypes.",
   },
   {
     icon: <RxDesktop />,
     title: "Front-end optimization",
-    description: "Improving website and web application performance and user experience through techniques like lazy loading, caching, and code minification, using knowledge of DOM and BOM.",
+    description: "Improving web application performance and user experience through techniques like lazy loading, caching, and code minification, using knowledge of DOM and BOM.",
   },
   {
     icon: <TbApiApp />,
@@ -52,7 +52,7 @@ export const serviceData = [
   {
     icon: <TfiSupport />,
     title: "Technical support",
-    description: "Providing technical support and troubleshooting services to diagnose and fix issues with websites and web applications, using debugging tools and problem-solving skills to resolve issues quickly and efficiently.",
+    description:"Offering technical support and troubleshooting for web applications. Diagnosing and resolving issues using debugging tools and problem-solving skills for efficient solutions",
   },
 ];
 
@@ -84,14 +84,14 @@ const ServiceSlider = () => {
         clickable: true,
       }}
       modules={[FreeMode, Pagination]}
-      className="h-[300px] sm:h-[435px] md:h-[420px] lg:h-[360px] xl:h-[460px]"
+      className="h-[280px] sm:h-[390px] md:h-[340px] lg:h-[315px] xl:h-[460px]"
     >
       {serviceData.map((item, index) => {
         return (
           <SwiperSlide key={index}>
-            <div  className="h-auto sm:h-[390px] md:h-[330px] lg:h-[290px] xl:h-[360px] rounded-xl shadow-xl shadow-zinc-700 px-4 py-6 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer transition-all duration-100 relative  tilt-slide">
+            <div  className="h-auto sm:h-[370px] md:h-[310px] lg:h-[270px] xl:h-[360px] rounded-xl shadow-xl shadow-zinc-800 px-4 py-6 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer transition-all duration-100 relative  tilt-slide">
               {/* icons */}
-              <div className="text-3xl mb-2  transition-all duration-300">{item.icon}</div>
+              <div className="text-3xl mb-2 transition-all duration-300">{item.icon}</div>
               {/* title&describtion */}
               <div className="mb-4 font-bold">
                 <div className="mb-2 text-lg">{item.title}</div>
