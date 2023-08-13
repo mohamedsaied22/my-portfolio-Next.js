@@ -15,10 +15,7 @@ p::selection,
 span::selection {
   background-color: #6c97cf;
 }
-/* .shadow {
-  text-shadow: 0 -6px 6px #282828, 2px 4px #fff;
 
-} */
 
 /* dark mode */
 .light {

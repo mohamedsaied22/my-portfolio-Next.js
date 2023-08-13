@@ -35,7 +35,7 @@ module.exports = {
         circleStar: 'url("/circle-star.svg")',
         site: 'url("/site-bg.svg")',
         project: 'url("/bg-4.png")',
-        about: 'url("/bg-1.png")',
+        about: 'url("/bg-4.png")',
         service: 'url("/bg-1.png")',
       },
       animation: {

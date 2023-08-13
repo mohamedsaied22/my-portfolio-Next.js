@@ -4,11 +4,11 @@ export const workSlider = {
     {
       images: [
         {
-          title: "ERP-System",
-          path: "/erp.png",
-          description: "Our ERP system project is a comprehensive solution built entirely with HTML and pure CSS without any frameworks. It provides a user-friendly interface for managing business processes such as cutomers, employees, services, and projects, streamlining operations and increasing efficiency.",
-          link: "https://mohamedsaied22.github.io/MoHappy-ERP/",
-          sourceCode: "https://github.com/mohamedsaied22/MoHappy-ERP",
+          title: "EgyBot",
+          path: "/egybot.png",
+          description: "EgyBot: Revolutionizing Digital Creativity with AI. Generate engaging conversations, stunning visuals, and captivating videos effortlessly. Unleash your creative potential and explore limitless possibilities with EgyBot.",
+          link: "https://egy-bot.vercel.app/",
+          sourceCode: "https://github.com/mohamedsaied22/EgyBot",
         },
         {
           title: "Chat-GPT Resume builder",
@@ -26,11 +26,11 @@ export const workSlider = {
           sourceCode: "https://github.com/mohamedsaied22/Simple-Landing-page",
         },
         {
-          title: "Weather App project",
-          path: "/weather-app.png",
-          description: "Our Weather App project is a dynamic and responsive solution built using OpenWeatherMap API, JavaScript, HTML5, and CSS3. With real-time weather data and location-based information, users can stay up-to-date on current weather conditions. This user-friendly platform provides a seamless user experience, making it easy to plan activities and stay informed.",
-          link: "https://mohamedsaied22.github.io/Weather-App/",
-          sourceCode: "https://github.com/mohamedsaied22/Weather-App",
+          title: "ERP-System",
+          path: "/erp.png",
+          description: "Our ERP system project is a comprehensive solution built entirely with HTML and pure CSS without any frameworks. It provides a user-friendly interface for managing business processes such as cutomers, employees, services, and projects, streamlining operations and increasing efficiency.",
+          link: "https://mohamedsaied22.github.io/MoHappy-ERP/",
+          sourceCode: "https://github.com/mohamedsaied22/MoHappy-ERP",
         },
       ],
     },
@@ -39,12 +39,16 @@ export const workSlider = {
         {
           title: "ESCAPADE ",
           path: "/escapade.png",
-          description: "ESCAPADE is a dynamic and engaging web app built using React.js, ReactDOM, JavaScript / ECMA 6, and JSON. With PWA support and Aos Animation integration, users can enjoy a seamless and immersive experience. This platform also utilizes SASS/SCSS for easy styling and customizability, making it the perfect solution for exploring new destinations."
-
-
-          ,
+          description: "ESCAPADE is a dynamic and engaging web app built using React.js, ReactDOM, JavaScript / ECMA 6, and JSON. With PWA support and Aos Animation integration, users can enjoy a seamless and immersive experience. This platform also utilizes SASS/SCSS for easy styling and customizability, making it the perfect solution for exploring new destinations.",
           link: "https://www.linkedin.com/feed/update/urn:li:activity:7070769130487889920/",
           sourceCode: "https://github.com/mohamedsaied22/escapade",
+        },
+        {
+          title: "Weather App project",
+          path: "/weather-app.png",
+          description: "Our Weather App project is a dynamic and responsive solution built using OpenWeatherMap API, JavaScript, HTML5, and CSS3. With real-time weather data and location-based information, users can stay up-to-date on current weather conditions. This user-friendly platform provides a seamless user experience, making it easy to plan activities and stay informed.",
+          link: "https://mohamedsaied22.github.io/Weather-App/",
+          sourceCode: "https://github.com/mohamedsaied22/Weather-App",
         },
         {
           title: "MoHappy landing page",
@@ -59,13 +63,6 @@ export const workSlider = {
           description: "BUSNIESS is a sleek and professional web project built using HTML5 and CSS3. This platform is designed to showcase your business in the best possible light, with clean and modern design elements that emphasize your brand identity. With BUSNIESS, you can create a powerful online presence and attract new customers to your business.",
           link: "https://mohamedsaied22.github.io/business/",
           sourceCode: "https://github.com/mohamedsaied22/business",
-        },
-        {
-          title: "Online Shopping",
-          path: "/online-shopping.png",
-          description: "Online Shopping is a sleek and professional web project built using HTML5 and CSS3. This platform is designed to showcase your business in the best possible light, with clean and modern design elements that emphasize your brand identity. With Online Shopping, you can create a powerful online presence and attract new customers to your business.",
-          link: "https://mohamedsaied22.github.io/MoHappy-ERP/",
-          sourceCode: "https://github.com/mohamedsaied22/MoHappy-ERP",
         },
       ],
     },
