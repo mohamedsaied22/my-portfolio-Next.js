@@ -6,7 +6,7 @@ export const workSlider = {
         {
           title: "EgyBot",
           path: "/egybot.png",
-          description: "EgyBot: Revolutionizing Digital Creativity with AI. Generate engaging conversations, stunning visuals, and captivating videos effortlessly. Unleash your creative potential and explore limitless possibilities with EgyBot.",
+          description: "EgyBot: Unleash Your Creativity with AI. EgyBot is a cutting-edge Saas AI model that revolutionizes digital creativity. With advanced technologies like Next.js, React.js, and Prisma, EgyBot empowers users to generate engaging conversations, stunning images, captivating videos, melodic music, and efficient code. Seamlessly integrating Clerk for secure authentication and Stripe for smooth payments.",
           link: "https://egy-bot.vercel.app/",
           sourceCode: "https://github.com/mohamedsaied22/EgyBot",
         },

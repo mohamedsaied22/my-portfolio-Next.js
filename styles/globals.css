@@ -325,7 +325,6 @@ button:hover .button-text {
   transition: var(--btn-transition);
   overflow: hidden;
   box-shadow: var(--btn-shadow);
-  border-radius: 10px;
 }
 
 .ui-btn span {
