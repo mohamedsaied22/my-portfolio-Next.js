@@ -128,7 +128,7 @@ const Home = () => {
           </motion.a>
           <div className="flex xl:justify-start justify-end xl:flex-row gap-y-6 ">
           <motion.a
-  href="https://drive.google.com/file/d/1fu3R3uUjtBIDOHBlayvH07L4RyeSV0VC/view?usp=sharing"
+  href="https://drive.google.com/file/d/1Qc6oZtFeEeelG3qdSOW3vuYcsYA4812K/view?usp=sharing"
   download="your-cv-name.pdf"
   className="z-20 pl-10 md:pl-0"
   target="_blank"
