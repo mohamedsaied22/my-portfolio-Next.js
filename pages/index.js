@@ -63,7 +63,7 @@ const Home = () => {
         <div className="flex text-center flex-col justify-center pt-0 xl:pt-20 xl:text-left h-full container mx-auto  ">
           {/* title */}
           <motion.p
-            variants={fadeIn("right", 0.5)}
+            variants={fadeIn("down", 0.5)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -73,7 +73,7 @@ const Home = () => {
           </motion.p>
           <motion.h2
             className="h2 z-20 text-sky-600 font-signture text-shad-sm  "
-            variants={fadeIn("right", 1)}
+            variants={fadeIn("up", 1)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -81,15 +81,15 @@ const Home = () => {
             Mohamed Saied,
           </motion.h2>
           <motion.div
-            variants={fadeIn("right", 1.5)}
+            variants={fadeIn("up", 2.5)}
             initial="hidden"
             animate="show"
             exit="hidden"
           >
             <h3 className="text-xl lg:text-3xl font-bold mb-4 z-30 ">
-              I am aaaa
+              I am a
               <motion.div
-                variants={fadeIn("right", 2)}
+                variants={fadeIn("left", 3)}
                 initial="hidden"
                 animate="show"
                 exit="hidden"
@@ -100,8 +100,8 @@ const Home = () => {
                     strings: [
                       "",
                       "",
-                      "Web Developer",
-                      "Software Implementor",
+                      "Oracle Technical Consultant",
+                      "OCI Certified Developer",
                       "Freelancer",
                     ],
                     autoStart: true,
@@ -113,7 +113,7 @@ const Home = () => {
           </motion.div>
           {/* links */}
           <motion.a
-            variants={fadeIn("right", 2)}
+            variants={fadeIn("left", 8.5)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -128,11 +128,11 @@ const Home = () => {
           </motion.a>
           <div className="flex xl:justify-start justify-end xl:flex-row gap-y-6 ">
           <motion.a
-  href="https://drive.google.com/file/d/1Qc6oZtFeEeelG3qdSOW3vuYcsYA4812K/view?usp=sharing"
+  href="https://drive.google.com/file/d/1gZQC_ZznjUZUVZEToTM2AGaUnjdGpuRQ/view?usp=sharing"
   download="your-cv-name.pdf"
   className="z-20 pl-10 md:pl-0"
   target="_blank"
-  variants={fadeIn("right", 2.5)}
+  variants={fadeIn("right", 9.5)}
   initial="hidden"
   animate="show"
   exit="hidden"
@@ -144,7 +144,7 @@ const Home = () => {
             <motion.a
               href="/contact"
               className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-4 xl:mb-10 z-20 "
-              variants={fadeIn("right", 3)}
+              variants={fadeIn("left", 9.5)}
               initial="hidden"
               animate="show"
               exit="hidden"
@@ -157,7 +157,7 @@ const Home = () => {
           {/*projects btns */}
           <motion.div
             className="flex justify-center xl:hidden relative z-20"
-            variants={fadeIn("right", 3.5)}
+            variants={fadeIn("right", 9.5)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -165,7 +165,7 @@ const Home = () => {
             <ProjectsBtn />
           </motion.div>
           <motion.div
-            variants={fadeIn("right", 3.5)}
+            variants={fadeIn("up", 10)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -185,7 +185,7 @@ const Home = () => {
         {/* avatar */}
         <motion.div
           className=" max-w-[900px] max-h-[700px] absolute -bottom-32 lg:bottom-[100px] lg:right-[0px] drop-shadow-2xl "
-          variants={fadeIn("down", 4)}
+          variants={fadeIn("down", 1.5)}
           initial="hidden"
           animate="show"
           exit="hidden"
