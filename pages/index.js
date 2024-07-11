@@ -157,7 +157,7 @@ const Home = () => {
           {/*projects btns */}
           <motion.div
             className="flex justify-center xl:hidden relative z-20"
-            variants={fadeIn("right", 9.5)}
+            variants={fadeIn("up", 9.5)}
             initial="hidden"
             animate="show"
             exit="hidden"

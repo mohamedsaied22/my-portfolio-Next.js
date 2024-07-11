@@ -14,14 +14,14 @@ const Services = () => {
       {/* <Circles /> */}
             {/* background image */}
             <div
-  className={`bg-service bg-cover bg-right bg-no-repeat w-full h-full absolute left-0 top-0 opacity-[.25]`}
+  className={`bg-about bg-cover bg-right bg-no-repeat w-full h-full absolute left-0 top-0 opacity-[.1]`}
 ></div>
       <div className="container mx-auto  ">
         <div className="flex flex-col xl:flex-row gap-x-8">
           {/* text */}
           <div className="flex text-center xl:w-[30vw] flex-col lg:text-left mb-2 xl:mb-0">
             <motion.h2
-              variants={fadeIn("right", 0.4)}
+              variants={fadeIn("left", 0.4)}
               initial="hidden"
               animate="show"
               exit="hidden"
@@ -30,7 +30,7 @@ const Services = () => {
               My S<span className="text-sky-600">e</span>rvic<span className="text-sky-600">e</span>s 
             </motion.h2>
             <motion.p
-              variants={fadeIn("right", 1)}
+              variants={fadeIn("left", .8)}
               initial="hidden"
               animate="show"
               exit="hidden"
@@ -40,7 +40,7 @@ const Services = () => {
             </motion.p>
           </div>
           <motion.div
-            variants={fadeIn("up", 1.8)}
+            variants={fadeIn("left", 1.5)}
             initial="hidden"
             animate="show"
             exit="hidden"
