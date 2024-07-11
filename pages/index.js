@@ -87,7 +87,7 @@ const Home = () => {
             exit="hidden"
           >
             <h3 className="text-xl lg:text-3xl font-bold mb-4 z-30 ">
-              I am a
+              I am aaaa
               <motion.div
                 variants={fadeIn("right", 2)}
                 initial="hidden"
