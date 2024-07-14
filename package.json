@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "@monogrid/gainmap-js": "^3.0.5",
     "@next/font": "^13.4.4",
     "@react-three/drei": "^9.78.2",
     "emailjs-com": "^3.2.0",
@@ -27,7 +28,7 @@
     "react-tsparticles": "^2.9.3",
     "swiper": "^9.4.0",
     "tailwind-scrollbar": "^3.0.4",
-    "three": "^0.154.0",
+    "three": "^0.166.1",
     "tilt.js": "^1.2.1",
     "tsparticles": "^2.9.3",
     "typewriter-effect": "^2.20.1",
