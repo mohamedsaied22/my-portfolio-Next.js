@@ -14,6 +14,7 @@ import { easeInOut, motion } from "framer-motion";
 
 //variatns
 import { fadeIn } from "../variants";
+import { scaleIn } from "../variants2";
 
 // loading
 import React, { useState, useEffect } from "react";
