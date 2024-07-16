@@ -27,7 +27,7 @@ const Projects = () => {
               My Pro<span className="text-sky-700 text-shad">j</span>ects.
             </motion.h2>
             <motion.p
-              variants={fadeIn("right", 0.4)}
+              variants={fadeIn("right", 0.3)}
               initial="hidden"
               animate="show"
               exit="hidden"
@@ -37,7 +37,7 @@ const Projects = () => {
             </motion.p>
           </div>
           <motion.div
-            variants={fadeIn("left", 0.6)}
+            variants={fadeIn("up", 1)}
             initial="hidden"
             animate="show"
             exit="hidden"

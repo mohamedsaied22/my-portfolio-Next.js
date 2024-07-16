@@ -8,18 +8,15 @@ import {
   FaReact,
   FaWordpress,
   FaSass,
-  
 } from "react-icons/fa";
 import { SiNextdotjs, SiJira } from "react-icons/si";
 import { BiHappyHeartEyes, BiSupport, BiLogoTailwindCss } from "react-icons/bi";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
-// import { TbReportAnalytics } from "react-icons/tb";
 import { BsGit, BsGithub } from "react-icons/bs";
 
 //framer-motion
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
-// import { scaleIn } from "../../variants2";
 
 //counter
 import CountUp from "react-countup";
@@ -119,7 +116,7 @@ const About = () => {
         <div className="flex-1 flex flex-col justify-center z-10">
           <motion.h2
             className="h2 text-shad-sm"
-            variants={fadeIn("right", 0.8)}
+            variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -127,14 +124,17 @@ const About = () => {
             Welcome <span className="text-sky-600">again!</span>
           </motion.h2>
           <motion.p
-            variants={fadeIn(0, 1.4)}
+            variants={fadeIn("right", 0.8)}
             initial="hidden"
             animate="show"
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-2 xl:mb-12 px-2 xl:px-0 font-sans font-semibold text-shad-sm"
           >
-     I'm an Oracle Applications Developer with a strong Computer Science background and over a year of hands-on experience in Oracle Fusion technologies like OTBI, BIP Publisher, and ERP customization. I love working with advanced PL/SQL and optimizing databases, and I'm currently diving into Oracle OIC for ERP integration.
-Let's collaborate and create tech magic! 
+            
+            Iam a detail-oriented and ambitious front-end web developer eager to
+            leverage my Bachelor of Information Technology degree in Computer
+            Science and recent experience participating in various coding
+            programs towards supporting business web development needs.
           </motion.p>
           {/* counters */}
           <motion.div
@@ -150,7 +150,7 @@ Let's collaborate and create tech magic!
                 <div className="text-2xl xl:text-4xl font-extrabold text-shad-sm text-center mb-2 flex items-center flex-col ">
                   <div className="text-sky-600 text-center flex items-center flex-col text-shad-sm">
                     <BiHappyHeartEyes className="mr-1 flex-1 shadow" />
-                    <CountUp start={0} end={55} duration={10} />
+                    <CountUp start={0} end={255} duration={10} />
                   </div>
                   <div className="text-xs uppercase text-center tracking-[1px] loading-[1.4] max-w-[100px]">
                     <br />
@@ -163,7 +163,7 @@ Let's collaborate and create tech magic!
                 <div className="text-2xl xl:text-4xl font-extrabold text-center mb-2 flex items-center flex-col ">
                   <div className="text-sky-600 text-center flex items-center flex-col text-shad-sm">
                     <AiOutlineFundProjectionScreen className="mr-1 flex-1 shadow" />
-                    <CountUp start={0} end={5} duration={10} />
+                    <CountUp start={0} end={15} duration={10} />
                   </div>
                   <div className="text-xs uppercase  text-center tracking-[1px] loading-[1.4]  max-w-[100px]">
                     <br />
@@ -176,12 +176,12 @@ Let's collaborate and create tech magic!
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-center mb-2 flex items-center flex-col ">
                   <div className="text-sky-600 text-center flex items-center flex-col text-shad-sm">
-                  <BiSupport className="mr-1 flex-1" />
-                  <CountUp start={0} end={77} duration={10} />
+                    <BiSupport className="mr-1 flex-1" />
+                    <CountUp start={0} end={877} duration={10} />
                   </div>
                   <div className="text-xs uppercase  text-center tracking-[1px] loading-[1.4] max-w-[100px]">
                     <br />
-                    Reports
+                    Hours Of Support
                   </div>
                 </div>
               </div>
@@ -190,7 +190,7 @@ Let's collaborate and create tech magic!
         </div>
         {/* info */}
         <motion.div
-          variants={fadeIn("right", 3.4)}
+          variants={fadeIn("down", 1.2)}
           initial="hidden"
           animate="show"
           exit="hidden"
