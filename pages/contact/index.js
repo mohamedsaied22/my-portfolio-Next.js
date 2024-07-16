@@ -47,14 +47,40 @@ const Contact = () => {
         (result) => {
           console.log(result); // Check the result object in the console
           toast.success("Your message has been sent!", {
-            position: toast.POSITION.BOTTOM_LEFT,
-          });
+            position: toast.POSITION.TOP_RIGHT,
+            style: {
+                background: "#9acaff", // Background color
+                color: "#ffffff", // Text color
+                boxShadow:
+                    "0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1)", // Box shadow
+                borderRadius: "12px 0  12px 0",
+                width: "98%",
+                fontSize: "bold",
+            },
+        });
+          
+          // toast.success("Your message has been sent!", {
+          //   position: toast.POSITION.BOTTOM_LEFT,
+          // });
         },
         (error) => {
           console.log(error); // Check the error object in the console
           toast.error("An error occurred. Please try again later.", {
-            position: toast.POSITION.BOTTOM_RIGHT,
-          });
+            position: toast.POSITION.TOP_RIGHT,
+            style: {
+                background: "#9acaff", // Background color
+                color: "#ffffff", // Text color
+                boxShadow:
+                    "0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1)", // Box shadow
+                borderRadius: "12px 0  12px 0",
+                width: "98%",
+                fontSize: "bold",
+            },
+        });
+
+          // toast.error("An error occurred. Please try again later.", {
+          //   position: toast.POSITION.BOTTOM_RIGHT,
+          // });
         }
       );
   };

@@ -2,7 +2,7 @@ export const scaleIn = (direction, delay) => {
   return {
     hidden: {
       scale: 0,
-      x: direction === 'left' ? -20 : direction === 'right' ? 80 : 0,
+      x: direction === 'left' ? 20 : direction === 'left' ? 80 : 0,
       opacity: 0,
       transition: {
         type: 'tween',

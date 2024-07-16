@@ -82,7 +82,7 @@ const Home = () => {
             Mohamed Saied,
           </motion.h2>
           <motion.div
-            variants={fadeIn("up", 2.5)}
+            variants={scaleIn("right", 2)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -90,10 +90,10 @@ const Home = () => {
             <h3 className="text-xl lg:text-3xl font-bold mb-4 z-30 ">
               I am a
               <motion.div
-                variants={fadeIn("left", 3)}
-                initial="hidden"
-                animate="show"
-                exit="hidden"
+                // variants={fadeIn("left", 3)}
+                // initial="hidden"
+                // animate="show"
+                // exit="hidden"
                 className="text-sky-600 font-texttyping "
               >
                 <Typewriter
@@ -105,6 +105,8 @@ const Home = () => {
                       "OCI Certified Developer",
                       "Freelancer",
                     ],
+                    delay: 20, // Typing speed, lower number is faster
+                    deleteSpeed: 5, // Deleting speed, lower number is faster
                     autoStart: true,
                     loop: true,
                   }}
@@ -114,7 +116,7 @@ const Home = () => {
           </motion.div>
           {/* links */}
           <motion.a
-            variants={fadeIn("left", 8.5)}
+            variants={fadeIn("right", 11.5)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -133,7 +135,7 @@ const Home = () => {
   download="your-cv-name.pdf"
   className="z-20 pl-10 md:pl-0"
   target="_blank"
-  variants={fadeIn("right", 9.5)}
+  variants={fadeIn("right", 12.5)}
   initial="hidden"
   animate="show"
   exit="hidden"
@@ -145,7 +147,7 @@ const Home = () => {
             <motion.a
               href="/contact"
               className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-4 xl:mb-10 z-20 "
-              variants={fadeIn("left", 9.5)}
+              variants={fadeIn("left", 12.5)}
               initial="hidden"
               animate="show"
               exit="hidden"
@@ -158,7 +160,7 @@ const Home = () => {
           {/*projects btns */}
           <motion.div
             className="flex justify-center xl:hidden relative z-20"
-            variants={fadeIn("up", 9.5)}
+            variants={fadeIn("up", 12.5)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -166,7 +168,7 @@ const Home = () => {
             <ProjectsBtn />
           </motion.div>
           <motion.div
-            variants={fadeIn("up", 10)}
+            variants={fadeIn("up", 12.5)}
             initial="hidden"
             animate="show"
             exit="hidden"
