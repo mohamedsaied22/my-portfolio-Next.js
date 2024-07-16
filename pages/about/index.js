@@ -79,7 +79,7 @@ export const aboutData = [
         stage: "2023 - present",
       },
       {
-        title: "Software Application Support - Izam",
+        title: "ERP Application Support - Izam",
         stage: "2022 - 2023",
       },
     ],

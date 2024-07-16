@@ -11,9 +11,22 @@ import {
 
   RxArrowTopRight,
 } from "react-icons/rx";
+import {
+  SiOracle,
+} from "react-icons/si";
+import {
+  AiFillDatabase,
+} from "react-icons/ai";
+
+import {
+  HiOutlineDocumentReport,
+} from "react-icons/hi";
+import {
+  MdOutlineSchool,
+} from "react-icons/md";
 
 
-import { FaLaptopCode } from 'react-icons/fa';
+import { FaLaptopCode , FaJava} from 'react-icons/fa';
 import { TbApiApp } from 'react-icons/tb';
 import { TfiSupport } from 'react-icons/tfi';
 
@@ -26,35 +39,41 @@ import VanillaTilt from 'vanilla-tilt';
 export const serviceData = [
   {
     icon: <FaLaptopCode />,
-    title: "Web development",
-    description: "Building responsive, accessible, and SEO-optimized websites using HTML5, CSS3, and JavaScript, with modern frameworks like Next.js and Tailwind CSS.",
+    title: "Oracle Fusion Applications Development",
+    description: "Developing and customizing Oracle Fusion applications using OTBI, BIP Publisher, and other Oracle tools to meet specific business needs.",
   },
   {
-    icon: <RxPencil2 />,
-    title: "(UI) design",
-    description: "Designing attractive and functional user interfaces for web and mobile applications using CSS3 and HTML5, creating wireframes, prototypes.",
+    icon: <SiOracle />,
+    title: "ERP Customization",
+    description: "Customizing Oracle ERP modules to enhance functionality, improve efficiency, and align with business processes.",
   },
   {
-    icon: <RxDesktop />,
-    title: "Front-end optimization",
-    description: "Improving web application performance and user experience through techniques like lazy loading, caching, and code minification, using knowledge of DOM and BOM.",
+    icon: <AiFillDatabase />,
+    title: "Advanced PL/SQL and Database Optimization",
+    description: "Writing complex PL/SQL scripts and optimizing database performance to ensure fast and reliable data processing.",
   },
   {
     icon: <TbApiApp />,
-    title: "API integration",
-    description: "Integrating third-party APIs into applications or creating custom APIs to improve functionality and user experience, using REST APIs, JSON, and AJAX.",
+    title: "Oracle Integration Cloud (OIC)",
+    description: "Integrating Oracle ERP with other systems using Oracle Integration Cloud (OIC) to streamline business processes and data flow.",
   },
   {
-    icon: <RxAccessibility />,
-    title: "Accessibility",
-    description: "Ensuring that websites and web applications are accessible to users with disabilities, using techniques like ARIA attributes and semantic HTML.",
+    icon: <HiOutlineDocumentReport />,
+    title: "Custom Report Development",
+    description: "Creating customized reports using OTBI and BIP Publisher to provide actionable insights and support decision-making.",
   },
   {
     icon: <TfiSupport />,
-    title: "Technical support",
-    description:"Offering technical support and troubleshooting for web applications. Diagnosing and resolving issues using debugging tools and problem-solving skills for efficient solutions",
+    title: "Technical Support and Troubleshooting",
+    description:"Providing technical support and troubleshooting for Oracle applications, diagnosing and resolving issues efficiently using advanced problem-solving skills.",
+  },
+  {
+    icon: <MdOutlineSchool />,
+    title: "Technical Trainer",
+    description: "Training and mentoring the functional team in Oracle technical skills, including Oracle SQL, OTBI and BIP Publisher.",
   },
 ];
+
 
 const ServiceSlider = () => {
   // initialize Vanilla Tilt.js on each slide element
