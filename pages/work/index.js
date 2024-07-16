@@ -18,7 +18,7 @@ const Projects = () => {
           {/* text */}
           <div className="flex text-center xl:w-[30vw] flex-col lg:text-left mb-2 xl:mb-0">
             <motion.h2
-              variants={fadeIn("right", 0.3)}
+              variants={fadeIn("right", 0.6)}
               initial="hidden"
               animate="show"
               exit="hidden"
@@ -27,7 +27,7 @@ const Projects = () => {
               My Pro<span className="text-sky-700 text-shad">j</span>ects.
             </motion.h2>
             <motion.p
-              variants={fadeIn("right", 0.3)}
+              variants={fadeIn("right", 0.6)}
               initial="hidden"
               animate="show"
               exit="hidden"
@@ -37,7 +37,7 @@ const Projects = () => {
             </motion.p>
           </div>
           <motion.div
-            variants={fadeIn("up", 1)}
+            variants={fadeIn("left", 0.5)}
             initial="hidden"
             animate="show"
             exit="hidden"
