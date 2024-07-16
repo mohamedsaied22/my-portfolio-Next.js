@@ -13,13 +13,13 @@ import {
 import { SiNextdotjs, SiJira } from "react-icons/si";
 import { BiHappyHeartEyes, BiSupport, BiLogoTailwindCss } from "react-icons/bi";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
-import { TbReportAnalytics } from "react-icons/tb";
+// import { TbReportAnalytics } from "react-icons/tb";
 import { BsGit, BsGithub } from "react-icons/bs";
 
 //framer-motion
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
-import { scaleIn } from "../../variants2";
+// import { scaleIn } from "../../variants2";
 
 //counter
 import CountUp from "react-countup";
@@ -119,7 +119,7 @@ const About = () => {
         <div className="flex-1 flex flex-col justify-center z-10">
           <motion.h2
             className="h2 text-shad-sm"
-            variants={fadeIn("right", 0.4)}
+            variants={fadeIn("right", 0.8)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -127,7 +127,7 @@ const About = () => {
             Welcome <span className="text-sky-600">again!</span>
           </motion.h2>
           <motion.p
-            variants={scaleIn(0, 1.4)}
+            variants={fadeIn(0, 1.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -138,7 +138,7 @@ Let's collaborate and create tech magic!
           </motion.p>
           {/* counters */}
           <motion.div
-            variants={fadeIn("right", 2.4)}
+            variants={fadeIn("right", 1.8)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -176,8 +176,8 @@ Let's collaborate and create tech magic!
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-center mb-2 flex items-center flex-col ">
                   <div className="text-sky-600 text-center flex items-center flex-col text-shad-sm">
-                    <TbReportAnalytics className="mr-1 flex-1" />
-                    <CountUp start={0} end={77} duration={10} />
+                  <BiSupport className="mr-1 flex-1" />
+                  <CountUp start={0} end={77} duration={10} />
                   </div>
                   <div className="text-xs uppercase  text-center tracking-[1px] loading-[1.4] max-w-[100px]">
                     <br />

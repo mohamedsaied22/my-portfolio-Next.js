@@ -14,8 +14,8 @@ const Services = () => {
       {/* <Circles /> */}
             {/* background image */}
             <div
-  className={`bg-about bg-cover bg-right bg-no-repeat w-full h-full absolute left-0 top-0 opacity-[.1]`}
-></div>
+  className={`bg-service bg-cover bg-right bg-no-repeat w-full h-full absolute left-0 top-0 opacity-[.25]`}
+      ></div>
       <div className="container mx-auto  ">
         <div className="flex flex-col xl:flex-row gap-x-8">
           {/* text */}

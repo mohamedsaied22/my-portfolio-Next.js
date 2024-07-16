@@ -24,7 +24,7 @@ export default function DarkModeButton() {
       setTheme("dark");
       document.documentElement.classList.add("dark");
     }
-  }, [setTheme]);
+    }, []);
 
   if (!mounted) return null;
   const currentTheme = theme === "system" ? systemTheme : theme;
