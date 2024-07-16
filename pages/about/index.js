@@ -158,7 +158,11 @@ const About = () => {
             className="max-w-[500px] mx-auto xl:mx-0 mb-2 xl:mb-12 px-2 xl:px-0 font-sans font-semibold text-shad-sm"
           >
             
-            I'm an Oracle Applications Developer with a strong Computer Science background and over a year of hands-on experience in Oracle Fusion technologies like OTBI, BIP Publisher, and ERP customization. I love working with advanced PL/SQL and optimizing databases, and I'm currently diving into Oracle OIC for ERP integration.
+            I&apos;m an Oracle Applications Developer with a strong Computer
+            Science background and over a year of hands-on experience in Oracle
+            Fusion technologies like OTBI, BIP Publisher, and ERP customization.
+            I love working with advanced PL/SQL and optimizing databases, and
+            I&apos;m currently diving into Oracle OIC for ERP integration.
           </motion.p>
           {/* counters */}
           <motion.div
